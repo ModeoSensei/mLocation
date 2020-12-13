@@ -104,13 +104,15 @@ Citizen.CreateThread(function()
             RageUI.ButtonWithStyle("Voitures", nil, {RightLabel = "→→"}, not cooldown,function(h,a,s)
             end, RMenu:Get("location","location_main2"))
 
+            RageUI.Separator("~h~~r~←------------------------------------→~h~~r~")
+
             RageUI.ButtonWithStyle("Motos & Vélo", nil, {RightLabel = "→→"}, not cooldown,function(h,a,s)
             end, RMenu:Get("location","location_main3"))
 
         end, function()end, 1)
 
         RageUI.IsVisible(RMenu:Get("location","location_main2"),true,true,true,function()
-            
+            RageUI.Separator("↓ ~o~Voitures~s~ ↓")
             RageUI.List("Véhicule", vec, vecIndex, "Choix du véhicule", {}, true, function(h, a, s, i) vecIndex = i end, RMenu:Get("location","location_main2")) 
 
             RageUI.ButtonWithStyle("Louer: ~b~"..vec[vecIndex], nil, {RightBadge = RageUI.BadgeStyle.Car}, not cooldown,function(h,a,s)
@@ -144,7 +146,7 @@ Citizen.CreateThread(function()
         end, function()end, 1)
 
         RageUI.IsVisible(RMenu:Get("location","location_main3"),true,true,true,function()
-
+            RageUI.Separator("↓ ~o~Moto & Vélo~s~ ↓")
             RageUI.List("Motos & Vélo", vec2, vec2Index, "Choix du véhicule", {}, true, function(h, a, s, i) vec2Index = i end, RMenu:Get("location","location_main3")) 
 
             RageUI.ButtonWithStyle("Louer: ~b~"..vec2[vec2Index], nil, {RightBadge = RageUI.BadgeStyle.Bike}, not cooldown,function(h,a,s)
