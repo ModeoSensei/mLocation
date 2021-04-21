@@ -6,6 +6,6 @@ Petit script Location en RageUI ! 🔥
 
 ..Inspiré par Pablo (Développeur de Redside) 👍
 
-Discord : https://discord.gg/VUSUP457CG
+Discord : https://discord.gg/gPZdFDwFNW
 
 Preview : https://youtu.be/Ot7vf4KqJAs
